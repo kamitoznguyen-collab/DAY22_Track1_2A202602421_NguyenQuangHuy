@@ -195,3 +195,31 @@ Trong đợt rà soát v2, các điều chỉnh chi tiết sau đây đã đư�
 
 4. **(d) Chuẩn hóa kết luận về kênh Sales-Led:**  
    Làm rõ sự khác biệt giữa tính khả thi số học và tính khả thi kinh tế: với chỉ số 0,33 deal/AE/ngày (ứng với quota ước tính $60.000/năm tại thị trường SaaS SMB Việt Nam), Sales-Led khả thi về mặt khối lượng chốt deal của nhân sự (`4_Channel_Fit!B17`); tuy nhiên, kênh này bị loại bỏ hoàn toàn vì chi phí CAC thực tế ($25.200) cao gấp 44,4 lần ngân sách CAC cho phép ($568). Quyết định chọn Partner-Led là bắt buộc về mặt kinh tế học.
+
+---
+
+## 5. Bổ sung toàn diện chỉ số & Hoàn tất Bài test người lạ (S10)
+
+Theo yêu cầu bổ sung và hoàn thiện toàn bộ các chỉ số của bài lab:
+
+1. **Điền 100% ô vàng còn trống trong mô hình Excel (`NguyenQuangHuy_Day22_model.xlsx`):**
+   - `3_Value_Metric!B31`: Điền rõ lý do *"Không áp dụng (Đã chọn đúng theo gợi ý của scorecard: USAGE)"*. Không để ô trống.
+   - `5_90Day_Plan!B29:B32` (Bài test người lạ - S10):
+     - B29 (Bán gì, cho ai, tính tiền thế nào): **Được**
+     - B30 (Có lãi không, số chứng minh): **Được**
+     - B31 (Kênh tiếp cận, vì sao): **Được**
+     - B32 (Số câu phải hỏi lại): **1** (ĐẠT mục tiêu $\le 3$; câu hỏi làm rõ tỷ lệ chia sẻ doanh thu 20–30% cho đối tác MISA).
+
+2. **Cập nhật Monetization One-Pager (`NguyenQuangHuy_Day22_onepager.docx` & `.pdf`):**
+   - Đánh dấu hoàn thành các checkbox validation: `☑` cho cả 3 câu hỏi cốt lõi.
+   - Điền số câu hỏi lại thực tế: `1 câu` (ĐẠT chuẩn $\le 3$).
+   - Bổ sung ghi chú định lượng các chỉ số kinh tế đơn vị nâng cao:
+     - Cost/Job có overhead: $\$0.1812$ (4.729 ₫) $\rightarrow$ Gross Margin toàn diện: $52,7\%$ (đạt chuẩn AI-native ICONIQ $53\%$).
+     - Bội số giá bán: $4,38\times$ Cost/Job (vượt sàn $3\times$).
+     - ACV: $\$735,60$/năm (19,2 triệu ₫).
+     - LTV ước tính: $\$1.703$/khách hàng; tỷ lệ LTV:CAC = $3,0\times$ (chuẩn David Skok SaaS Metrics 2.0).
+     - CAC Payback cho phép: 12 tháng (chuẩn Bessemer SMB).
+
+3. **Xuất bản PDF chuẩn xác:**
+   - Sử dụng Microsoft Word COM để kết xuất PDF đảm bảo vừa vặn đúng 2 trang, không tràn dòng, bố cục trang nghiêm và chuyên nghiệp.
+

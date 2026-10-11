@@ -22,18 +22,31 @@
 
 ## 2. Các chỉ số tài chính & GTM cốt lõi
 
-| Chỉ số | Giá trị ($ USD) | Quy đổi (VNĐ) | Tham chiếu ô Excel | Đánh giá & Trạng thái |
-| :--- | :---: | :---: | :---: | :--- |
-| **Cost / Job** (chưa overhead) | **$0.0875** | 2.283 ₫ | `2_Pricing!B5` | Mẫu số tính trên job hoàn thành (160 job/tháng) |
-| **Giá sàn** (3× Cost/Job) | **$0.2624** | 6.848 ₫ | `2_Pricing!B7` | Ngưỡng an toàn tối thiểu theo đề bài |
-| **Giá bán đề xuất** | **$0.3831** | **10.000 ₫** | `2_Pricing!B19` | 4,38× Cost/Job; mức giá tròn dễ mua cho SME |
-| **Gross Margin** | **77.2%** | — | `2_Pricing!B21` | **OK — AN TOÀN** (vùng 60% – 85%) |
-| **Breakeven Containment** | **18.3%** | — | `2_Pricing!B33` | **ĐẠT** (nhỏ hơn nhiều so với containment 32.0%) |
-| **ARPU / tháng** | **$61.30** | 1.600.000 ₫ | `4_Channel_Fit!B5` | Tính trên 160 job hoàn thành; mức tối thiểu 100 HĐ = 1,0 tr ₫ |
-| **Ngân sách CAC cho phép** | **$567.67** | 14.816.000 ₫ | `4_Channel_Fit!B9` | Payback 12 tháng phân khúc SMB |
-| **CAC thực tế Sales-Led** | **$25,200.00** | 657.720.000 ₫ | `4_Channel_Fit!B22` | Theo benchmark ICONIQ 2026 (SMB $6.300 / win 25%) |
-| **Bội số lệch CAC** | **44.4 lần** | — | `4_Channel_Fit!B23` | **Sales-Led không khả thi về CAC** (số deal 0,33/AE/ngày vẫn khả thi) |
-| **Kênh phân phối 90 ngày đầu** | **Partner-Led** | — | `4_Channel_Fit!B38` | **MISA AMIS Kế toán** (MISA Open API, chia sẻ 20–30%) |
+| Nhóm chỉ số | Chỉ số | Giá trị ($ USD) | Quy đổi (VNĐ) | Tham chiếu ô Excel | Đánh giá & Ý nghĩa chiến lược |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **Chi phí & Giá** | **Cost / Job** (thuần COGS) | **$0.0875** | 2.283 ₫ | `2_Pricing!B5` | Mẫu số tính trên job hoàn thành (160 job/tháng) |
+| | **Cost / Job** (toàn diện có overhead) | **$0.1812** | 4.729 ₫ | `1_Cost_Job!B67` | Đã phân bổ $15 overhead R&D/CSKH mỗi tháng |
+| | **Giá sàn an toàn** (3× Cost/Job) | **$0.2624** | 6.848 ₫ | `2_Pricing!B7` | Ngưỡng chặn lỗ biên tối thiểu theo đề bài |
+| | **Giá bán đề xuất** | **$0.3831** | **10.000 ₫** | `2_Pricing!B19` | 4,38× Cost/Job; mức giá tròn dễ mua cho SME |
+| | **Bội số giá bán / Cost/Job** | **4.38×** | — | `2_Pricing!B20` | Vượt xa sàn an toàn 3,0× |
+| | **Gross Margin** (thuần COGS) | **77.2%** | — | `2_Pricing!B21` | **OK — AN TOÀN** (vùng vàng 60% – 85% SaaS) |
+| | **Gross Margin toàn diện** (có overhead) | **52.7%** | — | `1_Cost_Job!B67` | Đạt benchmark AI-native ICONIQ 2026 (≈53%) |
+| **Kinh tế đơn vị & GTM** | **Sàn chi tiêu tối thiểu** | **$38.31** | 1.000.000 ₫ | `3_Value_Metric!B32` | Tương đương 100 HĐ hoàn thành; bảo vệ biên lợi nhuận |
+| | **ARPU / tháng** (khách chuẩn) | **$61.30** | 1.600.000 ₫ | `4_Channel_Fit!B5` | Tính trên 160 job hoàn thành (500 HĐ đầu vào) |
+| | **ACV / năm** (giá trị hợp đồng) | **$735.60** | 19.200.000 ₫ | `4_Channel_Fit!B10` | Doanh thu trung bình hàng năm từ 1 khách hàng |
+| | **Ngân sách CAC cho phép** | **$567.67** | 14.816.000 ₫ | `4_Channel_Fit!B9` | Payback 12 tháng phân khúc SMB theo Bessemer |
+| | **LTV ước tính** (Customer Lifetime Value) | **$1,703.00** | 44.448.000 ₫ | Tham chiếu SaaS | Giả định vòng đời 36 tháng SMB (`ARPU × GM × 36`) |
+| | **Tỷ lệ LTV : CAC** | **3.0×** | — | David Skok 2026 | Đạt chuẩn bền vững SaaS Metrics 2.0 (ngưỡng $\ge 3\times$) |
+| | **Số deal / AE / ngày** | **0.33 deal** | — | `4_Channel_Fit!B16` | Khả thi về năng suất chốt hợp đồng (quota $60k/năm) |
+| | **CAC thực tế Sales-Led** | **$25,200.00** | 657.720.000 ₫ | `4_Channel_Fit!B22` | Theo benchmark ICONIQ 2026 (Cost/opp $6.300, win 25%) |
+| | **Bội số lệch CAC Sales-Led** | **44.4 lần** | — | `4_Channel_Fit!B23` | **Sales-Led không khả thi về CAC** (lệch gấp 44,4 lần ngân sách) |
+| | **Kênh phân phối 90 ngày đầu** | **Partner-Led** | — | `4_Channel_Fit!B38` | **MISA AMIS Kế toán** (MISA Open API, chia sẻ 20–30%) |
+| **Ngưỡng an toàn & Thẩm định** | **Breakeven Containment** | **18.3%** | — | `2_Pricing!B33` | **ĐẠT** (thấp hơn nhiều so với containment hiện tại 32.0%) |
+| | **Ngưỡng gãy Containment** | **< 14.6%** | — | Stress Test | Điểm Gross Margin tụt dưới 50% nếu AI làm sai nhiều |
+| | **Ngưỡng gãy QA nội bộ** | **> 31.4%** | — | Stress Test | Tỷ lệ QA tối đa chịu được trước khi GM tụt dưới 50% |
+| | **Ngưỡng gãy Chi phí Infra** | **> $0.0453** | > 1.182 ₫ | Stress Test | Trần chi phí OCR/Infra/HĐ trước khi GM tụt dưới 50% |
+| | **Điểm Attribution & Autonomy** | **7 / 10 & 3 / 10** | — | `3_Value_Metric` | Khớp chuẩn: chọn đơn vị tính tiền **Usage / Hóa đơn** |
+| | **Bài test người lạ (S10)** | **3/3 câu ĐẠT** | — | `5_90Day_Plan!B29:32` | Hiểu rõ bán gì, có lãi không, kênh nào; hỏi lại: **1 câu** |
 
 ---
 
